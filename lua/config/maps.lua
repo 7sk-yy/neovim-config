@@ -20,6 +20,10 @@ keymap("n", "J", "10j", "10j", { noremap = false, silent = true })
 keymap("n", "K", "10k", "10k", { noremap = false, silent = true })
 keymap("n", "H", "^", "^", { noremap = false, silent = true })
 keymap("n", "L", "$", "$", { noremap = false, silent = true })
+keymap("v", "J", "10j", "10j", { noremap = false, silent = true })
+keymap("v", "K", "10k", "10k", { noremap = false, silent = true })
+keymap("v", "H", "^", "^", { noremap = false, silent = true })
+keymap("v", "L", "$", "$", { noremap = false, silent = true })
 
 -- toggle highlight
 keymap("n", "<Esc><Esc>", "<Cmd>set nohlsearch!<CR>", "<Cmd>set nohlsearch!<CR>", { noremap = false, silent = true })
