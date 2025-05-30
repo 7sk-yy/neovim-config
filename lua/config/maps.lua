@@ -54,5 +54,5 @@ keymap("n", "x", "\"_x", "\"_x", { noremap = true, silent = false })
 keymap("n", "s", "\"_s", "\"_s", { noremap = true, silent = false })
 
 -- grep
-keymap("n", "<Leader>g", nil, "viw<Cmd>call VSCodeNotify('workbench.action.findInFiles')<CR><ESC>", { noremap = true, silent = false })
+keymap("n", "<Leader>g", nil, "viw<Cmd>call VSCodeNotify('workbench.action.findInFiles')<CR>", { noremap = true, silent = false })
 keymap("v", "<Leader>g", nil, "<Cmd>call VSCodeNotify('workbench.action.findInFiles')<CR>", { noremap = true, silent = false })
