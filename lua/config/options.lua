@@ -10,19 +10,20 @@ vim.o.list = true
 vim.o.listchars = 'tab:»-,space:･,trail:-,eol:↲'
 vim.o.cursorline = true
 vim.o.termguicolors = true
-vim.o.clipboard = "unnamedplus"
+vim.o.clipboard = 'unnamedplus'
 vim.wo.signcolumn = 'yes'
 
+-- for Neovim Ui Modifier
 if vim.g.vscode then
   vim.api.nvim_exec([[
     " THEME CHANGER
     function! SetCursorLineNrColorInsert(mode)
-      " Insert mode: blue
-      if a:mode == "i"
+      k Insert mode: blue
+      if a:mode == 'i'
         call VSCodeNotify('nvim-theme.insert')
 
       " Replace mode: red
-      elseif a:mode == "r"
+      elseif a:mode == 'r'
         call VSCodeNotify('nvim-theme.replace')
       endif
     endfunction
