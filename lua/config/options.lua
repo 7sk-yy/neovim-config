@@ -18,7 +18,7 @@ if vim.g.vscode then
   vim.api.nvim_exec([[
     " THEME CHANGER
     function! SetCursorLineNrColorInsert(mode)
-      k Insert mode: blue
+      " Insert mode: blue
       if a:mode == 'i'
         call VSCodeNotify('nvim-theme.insert')
 
