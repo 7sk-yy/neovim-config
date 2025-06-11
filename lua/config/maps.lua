@@ -16,14 +16,14 @@ vim.g.mapleader = " "
 keymap("i", "jj", "<Esc>", nil, { noremap = true, silent = false })
 
 -- cursor
-keymap("n", "J", "10j", "10j", { noremap = false, silent = true })
-keymap("n", "K", "10k", "10k", { noremap = false, silent = true })
-keymap("n", "H", "^", "^", { noremap = false, silent = true })
-keymap("n", "L", "$", "$", { noremap = false, silent = true })
-keymap("v", "J", "10j", "10j", { noremap = false, silent = true })
-keymap("v", "K", "10k", "10k", { noremap = false, silent = true })
-keymap("v", "H", "^", "^", { noremap = false, silent = true })
-keymap("v", "L", "$", "$", { noremap = false, silent = true })
+keymap("n", "J", "10j", "10j", { noremap = true, silent = true })
+keymap("n", "K", "10k", "10k", { noremap = true, silent = true })
+keymap("n", "H", "^", "^", { noremap = true, silent = true })
+keymap("n", "L", "$", "$", { noremap = true, silent = true })
+keymap("v", "J", "10j", "10j", { noremap = true, silent = true })
+keymap("v", "K", "10k", "10k", { noremap = true, silent = true })
+keymap("v", "H", "^", "^", { noremap = true, silent = true })
+keymap("v", "L", "$", "$", { noremap = true, silent = true })
 
 -- toggle highlight
 keymap("n", "<Esc><Esc>", "<Cmd>set nohlsearch!<CR>", "<Cmd>set nohlsearch!<CR>", { noremap = false, silent = true })
@@ -31,6 +31,10 @@ keymap("n", "<Esc><Esc>", "<Cmd>set nohlsearch!<CR>", "<Cmd>set nohlsearch!<CR>"
 -- file
 keymap("n", "<Leader>w", "<Cmd>w<CR>", "<Cmd>call VSCodeNotify('workbench.action.files.save')<CR>", { noremap = true, silent = false })
 keymap("n", "<Leader>q", "<Cmd>q<CR>", "<Cmd>call VSCodeNotify('workbench.action.closeActiveEditor')<CR>", { noremap = true, silent = false })
+
+-- search
+keymap("n", "n", "nzz", "nzz", { noremap = true, silent = false })
+keymap("n", "N", "Nzz", "Nzz", { noremap = true, silent = false })
 
 -- window
 keymap("n", "<Leader>j", "<C-w>j", "<Cmd>call VSCodeNotify('workbench.action.focusBelowGroup')<CR>", { noremap = true, silent = false })
