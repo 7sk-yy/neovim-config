@@ -12,6 +12,7 @@ return {
   end,
   lazy = false,
   keys = {
-    { mode = 'n', '<Leader>e', ':NvimTreeToggle<CR>', desc = 'toggle tree' }
+    { mode = 'n', '<Leader>e', ':NvimTreeToggle<CR>', desc = 'toggle tree' },
+    { mode = 'n', '<Leader>;', ':NvimTreeFindFile<CR>', desc = 'find file in tree' }
   }
 }

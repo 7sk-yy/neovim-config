@@ -6,7 +6,8 @@ return {
   end,
   lazy = false,
   keys = {
-    { '<Leader><Tab>', ':BufferNext<CR>', desc = 'next tab' },
-    { '<Leader><S-Tab>', ':BufferPrev<CR>', desc = 'prev tab' }
+    { mode = 'n', '<Leader><Tab>', ':BufferNext<CR>', desc = 'next tab' },
+    { mode = 'n', '<Leader><S-Tab>', ':BufferPrev<CR>', desc = 'prev tab' },
+    { mode = 'n', '<Leader>x', ':BufferClose<CR>', desc = 'close tab' },
   }
 }
