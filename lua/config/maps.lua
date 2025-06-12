@@ -59,8 +59,8 @@ keymap('n', '<Leader>[', nil, '<Cmd>call VSCodeNotify("editor.action.peekDefinit
 keymap('n', '<Leader>]', nil, '<Cmd>call VSCodeNotify("editor.action.goToReferences")<CR>', { noremap = true, silent = false })
 
 -- delete
-keymap('n', 'x', '\'_x', '\'_x', { noremap = true, silent = false })
-keymap('n', 's', '\'_s', '\'_s', { noremap = true, silent = false })
+keymap('n', 'x', '"_x', '"_x', { noremap = true, silent = false })
+keymap('n', 's', '"_s', '"_s', { noremap = true, silent = false })
 
 -- grep
 keymap('n', '<Leader>g', nil, 'viw<Cmd>call VSCodeNotify("workbench.action.findInFiles")<CR>', { noremap = true, silent = false })
