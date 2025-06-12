@@ -28,6 +28,10 @@ keymap('v', 'L', '$', '$', { noremap = true, silent = true })
 -- toggle highlight
 keymap('n', '<Esc><Esc>', '<Cmd>set nohlsearch!<CR>', '<Cmd>set nohlsearch!<CR>', { noremap = false, silent = true })
 
+-- indent
+keymap('v', '<', '<gv', '<gv', { noremap = false, silent = true })
+keymap('v', '>', '>gv', '>gv', { noremap = false, silent = true })
+
 -- file
 keymap('n', '<Leader>w', '<Cmd>w<CR>', '<Cmd>call VSCodeNotify("workbench.action.files.save")<CR>', { noremap = true, silent = false })
 keymap('n', '<Leader>q', '<Cmd>q<CR>', '<Cmd>call VSCodeNotify("workbench.action.closeActiveEditor")<CR>', { noremap = true, silent = false })
